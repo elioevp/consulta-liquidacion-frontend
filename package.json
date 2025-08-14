@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "debug:env": "echo \"Reading VITE_API_URL: $VITE_API_URL\"",
-    "build": "npm run debug:env && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
