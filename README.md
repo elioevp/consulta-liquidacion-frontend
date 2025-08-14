@@ -1,12 +1,61 @@
-# React + Vite
+# Cliente para App de Reportes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz de usuario para generar y visualizar reportes.
 
-Currently, two official plugins are available:
+## Cómo Empezar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sigue estas instrucciones para tener una copia del proyecto corriendo en tu máquina local para desarrollo y pruebas.
 
-## Expanding the ESLint configuration
+### Prerrequisitos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Necesitas tener Node.js y npm instalados en tu sistema.
+
+- [Node.js](https://nodejs.org/)
+
+### Instalación
+
+1. Clona el repositorio (si está en GitHub) o descarga los archivos.
+2. Abre una terminal en la raíz del proyecto.
+3. Instala las dependencias del proyecto con npm:
+
+   ```sh
+   npm install
+   ```
+
+## Uso
+
+### Iniciar el servidor de desarrollo
+
+Para correr la aplicación en modo de desarrollo con recarga en caliente:
+
+```sh
+npm run dev
+```
+
+Esto iniciará la aplicación en `http://localhost:5173` (o el puerto que Vite asigne).
+
+### Compilar para producción
+
+Para crear una versión optimizada de la aplicación para producción:
+
+```sh
+npm run build
+```
+
+Los archivos compilados se guardarán en el directorio `dist`.
+
+### Linting
+
+Para revisar el código en busca de errores de estilo y potenciales problemas:
+
+```sh
+npm run lint
+```
+
+### Vista previa de la compilación
+
+Para ejecutar un servidor local con la versión de producción (después de haber corrido `npm run build`):
+
+```sh
+npm run preview
+```
