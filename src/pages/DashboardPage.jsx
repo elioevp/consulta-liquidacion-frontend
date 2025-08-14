@@ -23,7 +23,8 @@ const DashboardPage = () => {
         setReportData(null);
 
         try {
-                       const response = await axios.get(`http://localhost:3000/api/report`, {
+                                   const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+            const response = await axios.get(`${apiUrl}/report`, {
                 params: {
                     username: username,
                     directorio: directorio
