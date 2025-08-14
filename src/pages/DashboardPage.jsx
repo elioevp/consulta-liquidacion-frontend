@@ -23,7 +23,7 @@ const DashboardPage = () => {
         setReportData(null);
 
         try {
-                                               const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+                                               const apiUrl = import.meta.env.VITE_API_URL || 'https://report-backend.azurewebsites.net/api' || 'http://localhost:3000/api';
             const response = await axios.get(`${apiUrl}/report`, {
                 params: {
                     username: username,
@@ -104,7 +104,7 @@ const DashboardPage = () => {
                     <form onSubmit={handleFetchReport}>
                         <div className="row align-items-end">
                             <div className="col-lg-4 col-md-6 mb-3">
-                                <label className="form-label">Usuario</label>
+                                <label className="form-label fw-bold text-dark">Usuario</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -115,7 +115,7 @@ const DashboardPage = () => {
                                 />
                             </div>
                             <div className="col-lg-3 col-md-6 mb-3">
-                                <label className="form-label">Directorio</label>
+                                <label className="form-label fw-bold text-dark">Directorio</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -126,7 +126,7 @@ const DashboardPage = () => {
                                 />
                             </div>
                             <div className="col-lg-3 col-md-6 mb-3">
-                                <label className="form-label">Anticipo (Bs.)</label>
+                                <label className="form-label fw-bold text-dark">Anticipo (Bs.)</label>
                                 <input
                                     type="number"
                                     className="form-control"
@@ -156,7 +156,7 @@ const DashboardPage = () => {
             {/* Tarjeta de Resultados */}
             {reportData && (
                 <div className="card shadow-sm border-light">
-                    <div className="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                    <div className="card-header d-flex justify-content-between align-items-center py-3">
                         <h5 className="mb-0">Resultados del Reporte</h5>
                         <button className="btn btn-success btn-sm" onClick={generatePdf}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-download me-2" viewBox="0 0 16 16">

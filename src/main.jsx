@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage.jsx';
-import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 // Simplified router setup
 const router = createBrowserRouter([

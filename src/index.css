@@ -1,3 +1,25 @@
 body {
-    background-color: #d4eefc; /* Un azul celeste más notable */
+    background-color: #a8d8f0; /* Un celeste más notable */
+    color: #333;
+}
+
+.dashboard-container {
+    padding: 20px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: transparent; /* Hacemos la tabla transparente */
+}
+
+.card {
+    background-color: transparent;
+    border: none;
 }
